@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="classes" thread-count="2">
+  <test name="Selenium">
+    <classes>
+      <class name="com.meyoung.day03.GridTest"/>
+        <class name="com.meyoung.day1.TestNGDemo1">
+            <methods>
+                <exclude name="aestCase1" />
+            </methods>
+        </class>
+    </classes>
+  </test> <!-- webdriver_demo -->
+  <!--<listeners>
+          <listener class-name="autoframework.driver.testng.RetryListener"/>
+          <listener class-name="autoframework.driver.testng.TestResultListener"/>
+  </listeners>-->
+</suite> <!-- Default Suite -->
